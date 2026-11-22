@@ -4,74 +4,174 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Assistance – SiteLog</title>
-<meta name="description" content="Aide et contact pour les applications SiteLog Mobile et SiteLog PC.">
+<meta name="description" content="Aide, guides et contact pour bien utiliser SiteLog Mobile et SiteLog PC.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230F2945'/%3E%3Ctext x='16' y='23' font-family='Arial' font-weight='700' font-size='20' text-anchor='middle' fill='%235B93EC'%3ES%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../assets/style.css?v=2">
+<link rel="stylesheet" href="../assets/style.css?v=4">
 </head>
-<body>
-<header class="top">
+<body class="page-doc">
+
+<header class="top top-light">
 <div class="wrap">
 <a class="logo" href="../"><b>Site<span>Log</span></b><small>CAPTURER · CLASSER · RETROUVER</small></a>
-<nav aria-label="Navigation"><a href="../">Accueil</a><a href="../confidentialite/">Confidentialité</a></nav>
+<nav aria-label="Navigation">
+<a href="../"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></svg>Accueil</a>
+<a href="../confidentialite/"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 4.5-3.4 8-8 9-4.6-1-8-4.5-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg>Confidentialité</a>
+<a class="nav-cta" href="./" aria-current="page"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.6.3-1 .9-1 1.6V14"/><path d="M12 17.5h.01"/></svg>Assistance</a>
+</nav>
 </div>
 </header>
 
-<main class="doc">
-<h1>Assistance</h1>
-<p class="updated">SiteLog Mobile (Android, iOS) et SiteLog PC (Windows)</p>
-
-<div class="box">
-<p style="margin:0 0 8px"><strong>Nous contacter</strong></p>
-<p style="margin:0">Une question, un problème, une suggestion ? Écrivez-nous à <a href="mailto:sitelog@overie.fr?subject=Assistance%20SiteLog">sitelog@overie.fr</a> en précisant votre appareil (modèle de téléphone ou PC) et la version de SiteLog. Nous vous répondons dans les meilleurs délais.</p>
+<main>
+<div class="doc-hero" style="padding-bottom:120px">
+<div class="photo" aria-hidden="true"></div>
+<div class="wrap">
+<div class="head-ico" aria-hidden="true"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14v-2a8 8 0 0 1 16 0v2"/><rect x="3" y="13" width="4" height="6" rx="1.5"/><rect x="17" y="13" width="4" height="6" rx="1.5"/><path d="M19 19c0 1.7-1.8 2.5-4 2.5h-2"/></svg></div>
+<div style="flex:1;min-width:0">
+<h1>Assistance SiteLog</h1>
+<p class="sub">Aide, guides et contact pour bien utiliser SiteLog</p>
+<p class="lead">Trouvez rapidement une réponse dans les questions fréquentes, ou écrivez-nous.</p>
+<form class="search" role="search" onsubmit="return false">
+<svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#3E5470" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
+<label for="q" class="sr-only" style="position:absolute;left:-9999px">Rechercher une aide</label>
+<input id="q" type="search" placeholder="Rechercher une aide (ex. : créer un chantier, envoyer au PC…)" autocomplete="off">
+<button type="submit">Rechercher</button>
+</form>
+<p class="search-msg" id="search-msg" hidden></p>
+</div>
+</div>
 </div>
 
-<h2>Questions fréquentes</h2>
+<nav class="tiles" aria-label="Thèmes d'aide">
+<a class="tile" href="#premiers-pas"><svg aria-hidden="true" width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="#1F55AD" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 15c-1.5 1.5-2 5-2 5s3.5-.5 5-2"/><path d="M9 15l-3-3c1-3 4-8 12-9-1 8-6 11-9 12z"/><circle cx="14.5" cy="9.5" r="1.5"/></svg><b>Premiers pas</b><span>Installer et démarrer</span></a>
+<a class="tile" href="#preparer"><svg aria-hidden="true" width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="#1F55AD" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg><b>Préparer</b><span>Chantiers, catégories et éléments</span></a>
+<a class="tile" href="#capturer"><svg aria-hidden="true" width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="#1F55AD" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg><b>Capturer</b><span>Prendre les photos sur place</span></a>
+<a class="tile" href="#classer"><svg aria-hidden="true" width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="#1F55AD" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h10M4 18h6"/><path d="M15 17l2 2 4-4"/></svg><b>Classer</b><span>Revue et sous-détails</span></a>
+<a class="tile" href="#envoyer"><svg aria-hidden="true" width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="#1F55AD" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 18a5 5 0 1 1 1-9.9A6 6 0 0 1 19 10a4 4 0 0 1-1 8"/><path d="M12 12v8M9 15l3-3 3 3"/></svg><b>Envoyer au PC</b><span>Transférer vers le bureau</span></a>
+<a class="tile" href="#equipe"><svg aria-hidden="true" width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="#1F55AD" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="7" height="13" rx="1.5"/><rect x="12" y="4" width="10" height="8" rx="1.5"/><path d="M15 16h4M17 12v4"/></svg><b>Équipe et PC</b><span>Plusieurs téléphones, un bureau</span></a>
+</nav>
 
-<details>
-<summary>À quoi sert SiteLog ?</summary>
-<p>SiteLog permet de photographier vos chantiers en associant chaque photo à son chantier et à son ouvrage, puis de les retrouver facilement. Sur le téléphone, vous préparez le chantier, prenez les photos et les classez. Au bureau, SiteLog PC les reçoit, les range et permet de les rechercher par mot-clé.</p>
-</details>
+<div class="wrap-pad">
+<section class="quick" aria-labelledby="quick-title" style="padding:28px">
+<div class="quick-head">
+<svg aria-hidden="true" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#1F55AD" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></svg>
+<div><h2 id="quick-title">Démarrage rapide</h2><p>3 étapes pour commencer à utiliser SiteLog</p></div>
+</div>
+<div class="steps">
+<div class="step"><span class="n">1</span><div><b>Installer</b><span>Téléchargez SiteLog Mobile sur votre téléphone. SiteLog PC est fourni aux entreprises clientes.</span></div></div>
+<div class="step"><span class="n">2</span><div><b>Préparer</b><span>Créez votre chantier, puis choisissez les catégories et les éléments à photographier.</span></div></div>
+<div class="step"><span class="n">3</span><div><b>Capturer et envoyer</b><span>Prenez vos photos sur place, classez-les, puis envoyez-les au PC du bureau.</span></div></div>
+</div>
+</section>
 
-<details>
-<summary>Ai-je besoin de SiteLog PC pour utiliser l'application mobile ?</summary>
-<p>Non. L'application mobile fonctionne seule : création et préparation de chantiers, prise de vue, classement, consultation et partage des photos. SiteLog PC, fourni aux entreprises clientes, permet en plus de centraliser les photos de toute l'équipe et de les rechercher depuis le bureau.</p>
-</details>
+<section class="help" aria-label="Besoin d'aide ?">
+<div class="label">
+<svg aria-hidden="true" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14v-2a8 8 0 0 1 16 0v2"/><rect x="3" y="13" width="4" height="6" rx="1.5"/><rect x="17" y="13" width="4" height="6" rx="1.5"/></svg>
+<div><b>Besoin d'aide ?</b><span>Écrivez-nous, nous vous répondons.</span></div>
+</div>
+<a class="item" href="mailto:sitelog@overie.fr?subject=Assistance%20SiteLog">
+<svg aria-hidden="true" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#1F55AD" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+<div><b>Par e-mail</b><span>sitelog@overie.fr</span></div></a>
+<a class="item" href="mailto:sitelog@overie.fr?subject=Signalement%20d%27un%20probl%C3%A8me%20SiteLog&amp;body=Appareil%20(t%C3%A9l%C3%A9phone%20ou%20PC)%20%3A%0AVersion%20de%20SiteLog%20%3A%0ACe%20que%20vous%20faisiez%20%3A%0ACe%20qui%20s%27est%20pass%C3%A9%20%3A%0A">
+<svg aria-hidden="true" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#1F55AD" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6M12 12v4M12 18.5h.01"/></svg>
+<div><b>Signaler un problème</b><span>Précisez votre appareil, la version de SiteLog et ce qui s'est passé.</span></div></a>
+<a class="item" href="mailto:sitelog@overie.fr?subject=Demande%20de%20d%C3%A9monstration%20SiteLog">
+<svg aria-hidden="true" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#1F55AD" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="14" height="10" rx="1.5"/><path d="M6 18h6"/><rect x="17" y="8" width="5" height="12" rx="1.2"/></svg>
+<div><b>Équiper mon entreprise</b><span>Demandez une démonstration de SiteLog PC.</span></div></a>
+</section>
 
-<details>
-<summary>Le téléphone ne trouve pas le PC pour envoyer les photos</summary>
-<p>Vérifiez que :</p>
-<ul>
+<section class="faq" aria-labelledby="faq-title">
+<h2 class="faq-title" id="faq-title"><svg aria-hidden="true" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#0F2945" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 5c3-1.3 6.5-1.3 10 1 3.5-2.3 7-2.3 10-1v14c-3-1.3-6.5-1.3-10 1-3.5-2.3-7-2.3-10-1z"/><path d="M12 6v14"/></svg>Questions fréquentes</h2>
+
+<div class="faq-group" id="premiers-pas">
+<h3>Premiers pas</h3>
+<div class="faq-grid">
+<details><summary>À quoi sert SiteLog ?</summary><div><p>SiteLog permet de photographier vos chantiers en associant chaque photo à son chantier et à son ouvrage, puis de les retrouver facilement. Sur le téléphone, vous préparez le chantier, prenez les photos et les classez. Au bureau, SiteLog PC les reçoit, les range et permet de les rechercher par mot-clé.</p></div></details>
+<details><summary>Ai-je besoin de SiteLog PC pour utiliser l'application mobile ?</summary><div><p>Non. L'application mobile fonctionne seule : création et préparation de chantiers, prise de vue, classement, consultation et partage des photos. SiteLog PC, fourni aux entreprises clientes, permet en plus de centraliser les photos de toute l'équipe et de les rechercher depuis le bureau.</p></div></details>
+</div>
+</div>
+
+<div class="faq-group" id="preparer">
+<h3>Préparer un chantier</h3>
+<div class="faq-grid">
+<details><summary>Comment créer un chantier ?</summary><div><p>Sur l'écran d'accueil, ouvrez « Nouveau chantier », saisissez le code et le nom du chantier, puis validez. Si un collègue a déjà créé ce chantier, sélectionnez-le dans « Chantier déjà existant » plutôt que d'en créer un nouveau.</p></div></details>
+<details><summary>À quoi sert la préparation du chantier ?</summary><div><p>Avant d'aller sur place, vous choisissez les catégories à voir (Infrastructure, Superstructure, Second œuvre…) et les éléments prévus. Sur le chantier, il suffit ensuite de choisir l'élément d'un geste au moment de photographier.</p></div></details>
+</div>
+</div>
+
+<div class="faq-group" id="capturer">
+<h3>Capturer</h3>
+<div class="faq-grid">
+<details><summary>L'application n'a pas accès à l'appareil photo</summary><div><p>Ouvrez les réglages de votre téléphone, puis l'application SiteLog, et autorisez l'accès à l'appareil photo. Relancez ensuite SiteLog.</p></div></details>
+<details><summary>Comment zoomer pendant la prise de vue ?</summary><div><p>Touchez une des valeurs de zoom au-dessus du déclencheur, ou faites glisser le doigt dessus pour un réglage fin. Le pincement à deux doigts sur l'image fonctionne aussi.</p></div></details>
+</div>
+</div>
+
+<div class="faq-group" id="classer">
+<h3>Classer</h3>
+<div class="faq-grid">
+<details><summary>Je ne peux pas classer une photo tout de suite</summary><div><p>Pendant la revue des photos, touchez l'icône « Classer plus tard » (⏭) en haut de l'écran. La photo reste à classer : vous la retrouverez à la prochaine revue sur le téléphone, ou sur le PC si vous l'envoyez sans la classer.</p></div></details>
+<details><summary>Une photo ne correspond à aucun élément proposé</summary><div><p>Pendant la revue, utilisez « Ajouter » pour créer l'élément ou le sous-détail manquant. Il sera ensuite proposé pour les photos suivantes.</p></div></details>
+</div>
+</div>
+
+<div class="faq-group" id="envoyer">
+<h3>Envoyer au PC</h3>
+<div class="faq-grid">
+<details><summary>Comment envoyer mes photos au PC du bureau ?</summary><div><p>Sur l'écran d'accueil, touchez le bouton d'envoi (nuage) du chantier concerné. Le petit nombre affiché dessus indique combien de photos sont en attente d'envoi.</p></div></details>
+<details><summary>Le téléphone ne trouve pas le PC</summary><div><p>Vérifiez que :</p><ul>
 <li>le téléphone et le PC sont connectés <strong>au même réseau Wi-Fi</strong> ;</li>
 <li>SiteLog PC est <strong>ouvert</strong> sur le PC ;</li>
 <li>le pare-feu Windows <strong>autorise SiteLog PC</strong> sur le réseau (une autorisation est demandée au premier lancement) ;</li>
 <li>le réseau Wi-Fi n'isole pas les appareils entre eux. C'est parfois le cas des réseaux invités ou de certains réseaux d'entreprise : renseignez-vous auprès de votre service informatique.</li>
-</ul>
-</details>
+</ul></div></details>
+</div>
+</div>
 
-<details>
-<summary>Où sont stockées mes photos ?</summary>
-<p>Sur votre téléphone, puis sur le PC de votre entreprise une fois envoyées. Elles ne passent jamais par nos serveurs. Tous les détails sont dans la <a href="../confidentialite/">politique de confidentialité</a>.</p>
-</details>
-
-<details>
-<summary>Je ne peux pas classer une photo tout de suite</summary>
-<p>Pendant la revue des photos, utilisez le bouton « Classer plus tard » (icône ⏭ en haut de l'écran). La photo reste à classer : vous la retrouverez à la prochaine revue sur le téléphone, ou sur le PC si vous l'envoyez sans la classer.</p>
-</details>
-
-<details>
-<summary>L'application n'a pas accès à l'appareil photo</summary>
-<p>Ouvrez les réglages de votre téléphone, puis l'application SiteLog, et autorisez l'accès à l'appareil photo. Relancez ensuite SiteLog.</p>
-</details>
-
-<details>
-<summary>Comment obtenir SiteLog PC pour mon entreprise ?</summary>
-<p>Demandez une démonstration à <a href="mailto:sitelog@overie.fr?subject=Demande%20de%20d%C3%A9monstration%20SiteLog">sitelog@overie.fr</a> : nous vous présenterons SiteLog et les conditions de mise en place dans votre organisation.</p>
-</details>
+<div class="faq-group" id="equipe">
+<h3>Équipe et PC</h3>
+<div class="faq-grid">
+<details><summary>Plusieurs personnes peuvent-elles photographier le même chantier ?</summary><div><p>Oui. Chaque téléphone envoie ses photos au même PC, et chaque photo garde son auteur et sa date. Au bureau, toutes les photos du chantier se retrouvent dans la même bibliothèque.</p></div></details>
+<details><summary>Où sont stockées mes photos ?</summary><div><p>Sur votre téléphone, puis sur le PC de votre entreprise une fois envoyées. Elles ne passent jamais par nos serveurs. Tous les détails sont dans la <a href="../confidentialite/">politique de confidentialité</a>.</p></div></details>
+<details><summary>Comment obtenir SiteLog PC pour mon entreprise ?</summary><div><p>Demandez une démonstration à <a href="mailto:sitelog@overie.fr?subject=Demande%20de%20d%C3%A9monstration%20SiteLog">sitelog@overie.fr</a> : nous vous présenterons SiteLog et les conditions de mise en place dans votre organisation.</p></div></details>
+</div>
+</div>
+</section>
+</div>
 </main>
 
 <footer>SiteLog · une application Overie · © 2026 · <a href="../">Accueil</a> · <a href="../confidentialite/">Confidentialité</a></footer>
+
+<script>
+(function () {
+  var input = document.getElementById('q');
+  var msg = document.getElementById('search-msg');
+  var items = Array.prototype.slice.call(document.querySelectorAll('.faq details'));
+  var groups = Array.prototype.slice.call(document.querySelectorAll('.faq-group'));
+  function norm(s) { return s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, ''); }
+  function run(scroll) {
+    var words = norm(input.value).split(/\s+/).filter(Boolean);
+    var found = 0;
+    items.forEach(function (d) {
+      var text = norm(d.textContent);
+      var ok = words.every(function (w) { return text.indexOf(w) !== -1; });
+      d.hidden = !ok;
+      if (ok) found++;
+      d.open = ok && words.length > 0;
+    });
+    groups.forEach(function (g) { g.hidden = !g.querySelector('details:not([hidden])'); });
+    if (!words.length) { msg.hidden = true; items.forEach(function (d) { d.open = false; }); return; }
+    msg.hidden = false;
+    msg.innerHTML = found
+      ? found + (found > 1 ? ' réponses trouvées.' : ' réponse trouvée.')
+      : 'Aucune réponse trouvée. Écrivez-nous à <a href="mailto:sitelog@overie.fr?subject=Assistance%20SiteLog">sitelog@overie.fr</a>.';
+    if (scroll && found) document.getElementById('faq-title').scrollIntoView({ behavior: 'smooth' });
+  }
+  input.addEventListener('input', function () { run(false); });
+  input.form.addEventListener('submit', function () { run(true); });
+})();
+</script>
 </body>
 </html>
