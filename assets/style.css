@@ -171,3 +171,9 @@ body.page-doc{background:#F3F6FA}
 @media (max-width:1100px){.tiles{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media (max-width:980px){.help{flex-direction:column;margin-left:16px;margin-right:16px}.help .label{flex:none;clip-path:none}.help .item+.item{border-left:0;border-top:1px solid #E3EAF3}.faq-grid{grid-template-columns:1fr}.quick{margin-left:16px;margin-right:16px}}
 @media (max-width:600px){.tiles{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;padding:0 16px}.doc-hero .head-ico{width:60px;height:60px}.search button{padding:0 14px}}
+/* ---- pied de page commun ---- */
+footer{padding:28px 24px}
+footer nav{display:flex;flex-wrap:wrap;justify-content:center;gap:4px 28px;margin-bottom:6px}
+footer nav a{display:inline-flex;align-items:center;min-height:40px;color:#fff;font-weight:600;text-decoration:none}
+footer nav a:hover{color:#8FB5F2;text-decoration:underline}
+footer p{margin:0;color:#B8C7DA}
