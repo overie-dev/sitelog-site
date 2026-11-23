@@ -5,21 +5,26 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Assistance – SiteLog</title>
 <meta name="description" content="Aide, guides et contact pour bien utiliser SiteLog Mobile et SiteLog PC.">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230F2945'/%3E%3Ctext x='16' y='23' font-family='Arial' font-weight='700' font-size='20' text-anchor='middle' fill='%235B93EC'%3ES%3C/text%3E%3C/svg%3E">
+<link rel="icon" type="image/png" href="/assets/favicon.png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../assets/style.css?v=5">
+<link rel="stylesheet" href="/assets/style.css?v=6">
+<script src="/assets/site.js?v=6" defer></script>
 </head>
 <body class="page-doc">
 
-<header class="top top-light">
+<header class="site-header">
 <div class="wrap">
-<a class="logo" href="../"><b>Site<span>Log</span></b><small>CAPTURER · CLASSER · RETROUVER</small></a>
-<nav aria-label="Navigation">
-<a href="../"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></svg>Accueil</a>
-<a href="../confidentialite/"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 4.5-3.4 8-8 9-4.6-1-8-4.5-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg>Confidentialité</a>
-<a class="nav-cta" href="./" aria-current="page"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.6.3-1 .9-1 1.6V14"/><path d="M12 17.5h.01"/></svg>Assistance</a>
+<a class="brand" href="/" aria-label="SiteLog, accueil"><img src="/assets/logo-sitelog.png" width="54" height="54" alt=""><span><b>Site<span>Log</span></b><small>Capturer<i>•</i>Classer<i>•</i>Retrouver</small></span></a>
+<button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>Menu</button>
+<nav class="site-nav" id="site-nav" aria-label="Navigation principale">
+<a href="/#fonctionnement">Fonctionnement</a>
+<a href="/#recherche">Démonstration</a>
+<a href="/assistance/" aria-current="page">Assistance</a>
+<a href="/confidentialite/">Confidentialité</a>
+<a class="cta" href="mailto:sitelog@overie.fr?subject=Demande%20de%20d%C3%A9monstration%20SiteLog">Demander une démonstration</a>
 </nav>
 </div>
 </header>
@@ -134,7 +139,7 @@
 <h3>Équipe et PC</h3>
 <div class="faq-grid">
 <details><summary>Plusieurs personnes peuvent-elles photographier le même chantier ?</summary><div><p>Oui. Chaque téléphone envoie ses photos au même PC, et chaque photo garde son auteur et sa date. Au bureau, toutes les photos du chantier se retrouvent dans la même bibliothèque.</p></div></details>
-<details><summary>Où sont stockées mes photos ?</summary><div><p>Sur votre téléphone, puis sur le PC de votre entreprise une fois envoyées. Elles ne passent jamais par nos serveurs. Tous les détails sont dans la <a href="../confidentialite/">politique de confidentialité</a>.</p></div></details>
+<details><summary>Où sont stockées mes photos ?</summary><div><p>Sur votre téléphone, puis sur le PC de votre entreprise une fois envoyées. Elles ne passent jamais par nos serveurs. Tous les détails sont dans la <a href="/confidentialite/">politique de confidentialité</a>.</p></div></details>
 <details><summary>Comment obtenir SiteLog PC pour mon entreprise ?</summary><div><p>Demandez une démonstration à <a href="mailto:sitelog@overie.fr?subject=Demande%20de%20d%C3%A9monstration%20SiteLog">sitelog@overie.fr</a> : nous vous présenterons SiteLog et les conditions de mise en place dans votre organisation.</p></div></details>
 </div>
 </div>

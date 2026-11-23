@@ -177,3 +177,74 @@ footer nav{display:flex;flex-wrap:wrap;justify-content:center;gap:4px 28px;margi
 footer nav a{display:inline-flex;align-items:center;min-height:40px;color:#fff;font-weight:600;text-decoration:none}
 footer nav a:hover{color:#8FB5F2;text-decoration:underline}
 footer p{margin:0;color:#B8C7DA}
+/* ===== v6 : en-tête commun + accueil revu ===== */
+.site-header{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid #E3EAF3}
+.site-header .wrap{position:relative;max-width:1240px;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:10px 24px}
+.brand{display:flex;align-items:center;gap:14px;text-decoration:none}
+.brand img{width:54px;height:54px;display:block}
+.brand b{display:block;font-size:27px;font-weight:800;letter-spacing:-.6px;line-height:1.1;color:#0F1E33}
+.brand b span{color:#2563EB}
+.brand small{display:block;margin-top:3px;font-size:14px;color:#5E6B7A}
+.brand small i{font-style:normal;color:#2563EB;margin:0 4px}
+.site-nav{display:flex;align-items:center;gap:4px 24px}
+.site-nav a{display:inline-flex;align-items:center;min-height:44px;font-size:15px;font-weight:600;color:#0F2945;text-decoration:none}
+.site-nav a:hover{color:#1F55AD}
+.site-nav a[aria-current="page"]{color:#1F55AD;box-shadow:inset 0 -2px 0 #1F55AD}
+.site-nav a.cta{padding:0 18px;border-radius:10px;background:#2F6FD6;color:#fff}
+.site-nav a.cta:hover{background:#1F55AD;color:#fff}
+.menu-btn{display:none;align-items:center;gap:8px;min-height:44px;padding:0 14px;border:1px solid #C5D2E2;border-radius:10px;background:#fff;color:#0F2945;font:inherit;font-weight:600;cursor:pointer}
+@media (max-width:960px){
+.menu-btn{display:inline-flex}
+.site-nav{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;align-items:stretch;gap:0;padding:8px 24px 18px;background:#fff;border-bottom:1px solid #E3EAF3;box-shadow:0 12px 24px rgba(15,41,69,.1)}
+.site-header.open .site-nav{display:flex}
+.site-nav a{border-bottom:1px solid #EEF2F7}
+.site-nav a[aria-current="page"]{box-shadow:none}
+.site-nav a.cta{margin-top:12px;justify-content:center;border-bottom:0}
+}
+@media (max-width:420px){.brand img{width:44px;height:44px}.brand b{font-size:23px}.brand small{font-size:12px}}
+/* hero accueil */
+.hero2{position:relative;padding:64px 24px 72px;color:#fff;background:linear-gradient(90deg,rgba(11,31,53,.97) 0%,rgba(15,41,69,.92) 45%,rgba(15,41,69,.78) 100%),url(chantier-clt.jpg) right 30%/cover no-repeat,#0F2945}
+.hero2 .wrap{max-width:1280px;display:flex;flex-wrap:wrap;align-items:center;gap:40px}
+.hero2 .txt{flex:1 1 400px;min-width:0;display:flex;flex-direction:column;gap:22px}
+.hero2 .kicker{margin:0;font-size:13px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#8FB5F2}
+.hero2 h1{font-size:clamp(34px,5vw,54px);line-height:1.08;letter-spacing:-1.3px}
+.hero2 h1 span{color:#6EA8F5}
+.hero2 .punch{margin:0;font-size:clamp(19px,2.2vw,22px);line-height:1.5;font-weight:600;color:#fff}
+.hero2 .ctx{margin:0;font-size:17px;line-height:1.6;color:#C9D6E6}
+.hero2 .devices{flex:1.5 1 520px;min-width:0}
+.hero2 .devices img{width:100%;border-radius:18px;box-shadow:0 24px 48px rgba(0,0,0,.35)}
+.hero2 .origin{color:#B8C7DA!important}
+/* constat plus expressif */
+.card .tile-ico{width:60px;height:60px;border-radius:16px;background:#EAF2FC;display:flex;align-items:center;justify-content:center}
+.card.warn .tile-ico{background:#FDF0E3}
+.card .tag{align-self:flex-start;margin:0;font-size:13px!important;font-weight:700;letter-spacing:.5px;color:#1F55AD!important;background:#EAF2FC;border-radius:999px;padding:4px 12px}
+/* flux terrain -> bureau */
+.flow{display:flex;flex-wrap:wrap;align-items:stretch;gap:14px;margin-bottom:40px}
+.flow-step{flex:1 1 260px;min-width:0;background:#16345A;border:1px solid #2B4C73;border-radius:16px;overflow:hidden;display:flex;flex-direction:column}
+.flow-step .vis{height:180px;background:#0B1F35;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.flow-step .vis img{width:100%;height:100%;object-fit:cover}
+.flow-step .meta{display:flex;flex-direction:column;gap:8px;padding:18px;width:100%}
+.flow-step .meta span{display:flex;justify-content:space-between;gap:12px;font-size:14px;color:#D3DEEB;border-bottom:1px solid #2B4C73;padding-bottom:6px}
+.flow-step .meta span b{color:#8FB5F2;font-weight:600}
+.flow-step .cap{padding:16px 18px;font-size:16px;line-height:1.5;color:#fff}
+.flow-step .cap b{display:block;color:#8FB5F2;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:4px}
+.flow-arrow{flex:0 0 auto;align-self:center;color:#8FB5F2}
+/* capitalisation */
+.capi .wrap{display:flex;flex-wrap:wrap;align-items:center;gap:48px}
+.capi .txt{flex:1 1 420px;min-width:0}
+.capi ul{list-style:none;margin:24px 0 0;padding:0;display:flex;flex-direction:column;gap:16px}
+.capi li{display:flex;gap:14px;font-size:17px;line-height:1.6;color:#3E5470}
+.capi li svg{flex:none;margin-top:2px}
+.capi .pic{flex:1 1 380px;min-width:0;position:relative}
+.capi .pic img{width:100%;aspect-ratio:4/3;object-fit:cover;object-position:center 30%;border-radius:20px}
+.capi .badge{position:absolute;left:20px;bottom:20px;display:flex;align-items:center;gap:10px;background:#fff;border-radius:12px;padding:12px 16px;font-weight:700;font-size:15px;color:#0F2945;box-shadow:0 10px 24px rgba(15,41,69,.2)}
+/* CTA final */
+.cta2{position:relative;padding:96px 24px;background:linear-gradient(rgba(11,31,53,.9),rgba(11,31,53,.9)),url(chantier-clt.jpg) center 35%/cover no-repeat,#0B1F35}
+.cta2 .box{max-width:880px;margin:0 auto;text-align:center;display:flex;flex-direction:column;align-items:center;gap:20px;background:rgba(22,52,90,.85);border:1px solid #2B4C73;border-radius:24px;padding:48px 32px}
+.cta2 h2{color:#fff;font-size:clamp(28px,4vw,40px)}
+.cta2 p{margin:0;font-size:19px;line-height:1.6;color:#D3DEEB}
+.cta2 .meta{font-size:15px;color:#B8C7DA}
+.cta2 .actions{justify-content:center}
+@media (max-width:700px){.flow-arrow{transform:rotate(90deg);margin:0 auto}.hero2{padding-top:40px}.cta2 .box{padding:36px 20px}}
+html{scroll-padding-top:84px}
+.toc{top:96px}

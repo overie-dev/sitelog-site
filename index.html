@@ -4,48 +4,52 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>SiteLog – la mémoire photo de vos chantiers</title>
-<meta name="description" content="SiteLog capture, classe et centralise les photos de vos chantiers : chaque photo garde son chantier, son ouvrage, sa date et son auteur, et se retrouve en quelques secondes.">
+<meta name="description" content="Vos chantiers produisent des milliers de photos. SiteLog les capture, les classe et les transforme en patrimoine technique, retrouvable en quelques secondes.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://sitelog.overie.fr/">
 <meta property="og:title" content="SiteLog – la mémoire photo de vos chantiers">
-<meta property="og:description" content="Capturer · Classer · Retrouver. La mémoire technique de vos chantiers, enfin organisée.">
-<meta property="og:image" content="https://sitelog.overie.fr/assets/hero.jpg">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230F2945'/%3E%3Ctext x='16' y='23' font-family='Arial' font-weight='700' font-size='20' text-anchor='middle' fill='%235B93EC'%3ES%3C/text%3E%3C/svg%3E">
+<meta property="og:description" content="Capturer · Classer · Retrouver. Vos photos de chantier deviennent un patrimoine technique.">
+<meta property="og:image" content="https://sitelog.overie.fr/assets/hero-appareils.jpg">
+<link rel="icon" type="image/png" href="/assets/favicon.png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/style.css?v=5">
+<link rel="stylesheet" href="/assets/style.css?v=6">
+<script src="/assets/site.js?v=6" defer></script>
 </head>
 <body>
 
-<header class="top">
+<header class="site-header">
 <div class="wrap">
-<a class="logo" href="#accueil"><b>Site<span>Log</span></b><small>CAPTURER · CLASSER · RETROUVER</small></a>
-<nav aria-label="Sections de la page">
-<a href="#constat">Le constat</a>
-<a href="#fonctionnement">Fonctionnement</a>
-<a href="#recherche">Démonstration</a>
-<a href="#benefices">Bénéfices</a>
-<a class="btn btn-primary" href="mailto:sitelog@overie.fr?subject=Demande%20de%20d%C3%A9monstration%20SiteLog">Demander une démonstration</a>
+<a class="brand" href="/" aria-label="SiteLog, accueil"><img src="/assets/logo-sitelog.png" width="54" height="54" alt=""><span><b>Site<span>Log</span></b><small>Capturer<i>•</i>Classer<i>•</i>Retrouver</small></span></a>
+<button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>Menu</button>
+<nav class="site-nav" id="site-nav" aria-label="Navigation principale">
+<a href="/#fonctionnement">Fonctionnement</a>
+<a href="/#recherche">Démonstration</a>
+<a href="/assistance/">Assistance</a>
+<a href="/confidentialite/">Confidentialité</a>
+<a class="cta" href="mailto:sitelog@overie.fr?subject=Demande%20de%20d%C3%A9monstration%20SiteLog">Demander une démonstration</a>
 </nav>
 </div>
 </header>
 
 <main>
-<section id="accueil" class="dark hero">
+<section id="accueil" class="hero2">
 <div class="wrap">
-<div class="hero-text">
+<div class="txt">
+<p class="kicker">Photothèque de chantier pour le BTP</p>
 <h1>La mémoire photo de vos chantiers, <span>enfin organisée.</span></h1>
-<p>SiteLog capture, classe et centralise les photos de vos chantiers pour en faire une mémoire technique durable, accessible et exploitable par vos équipes.</p>
-<p class="small">Chaque photo garde son contexte : chantier, ouvrage, élément, date, auteur.</p>
+<p class="punch">Vos chantiers produisent des milliers de photos. SiteLog les transforme en patrimoine technique.</p>
+<p class="ctx">Chaque photo garde son contexte (chantier, ouvrage, élément, date, auteur) et se retrouve en quelques secondes depuis le bureau.</p>
 <div class="actions">
 <a class="btn btn-primary" href="mailto:sitelog@overie.fr?subject=Demande%20de%20d%C3%A9monstration%20SiteLog">Demander une démonstration</a>
-<a class="btn btn-ghost" href="#fonctionnement">Voir SiteLog en action</a>
+<a class="btn btn-ghost" href="#fonctionnement">Découvrir le fonctionnement</a>
 </div>
-<p class="origin"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#5B93EC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V8l7-5 7 5v13"/><path d="M9 21v-6h6v6"/></svg>Né sur nos propres chantiers, utilisé chaque jour par notre équipe.</p>
+<p class="origin" style="margin:0;display:flex;align-items:center;gap:10px;font-size:15px"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#6EA8F5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V8l7-5 7 5v13"/><path d="M9 21v-6h6v6"/></svg>Né sur nos propres chantiers, utilisé chaque jour par notre équipe.</p>
 </div>
-<div class="hero-img">
-<img src="assets/hero.jpg" width="1600" height="892" alt="SiteLog sur PC et sur mobile : la bibliothèque photo d'un chantier et la liste des chantiers">
+<div class="devices">
+<img src="/assets/hero-appareils.jpg" width="1400" height="840" alt="SiteLog PC (réception, organisation et recherche des photos) et SiteLog Mobile (terrain, capture, classement) côte à côte">
 </div>
 </div>
 </section>
@@ -58,19 +62,22 @@
 </div>
 <div class="cards">
 <div class="card">
-<svg aria-hidden="true" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#2F6FD6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="4" width="7" height="7" rx="1.5" transform="rotate(12 17.5 7.5)"/><rect x="4" y="14" width="7" height="7" rx="1.5" transform="rotate(-10 7.5 17.5)"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>
+<div class="tile-ico"><svg aria-hidden="true" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#1F55AD" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="4" width="7" height="7" rx="1.5" transform="rotate(12 17.5 7.5)"/><rect x="4" y="14" width="7" height="7" rx="1.5" transform="rotate(-10 7.5 17.5)"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg></div>
 <h3>Éparpillées</h3>
 <p>Téléphones, messageries, dossiers : les photos sont dispersées et personne n'a la vue d'ensemble.</p>
+<p class="tag">Qui a la photo ?</p>
 </div>
 <div class="card">
-<svg aria-hidden="true" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#2F6FD6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M20 20l-4.8-4.8"/><path d="M8.5 8.5l4 4"/><path d="M12.5 8.5l-4 4"/></svg>
+<div class="tile-ico"><svg aria-hidden="true" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#1F55AD" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M20 20l-4.8-4.8"/><path d="M8.5 8.5l4 4"/><path d="M12.5 8.5l-4 4"/></svg></div>
 <h3>Introuvables</h3>
 <p>Retrouver une photo précise devient une recherche interminable, qui n'aboutit pas toujours.</p>
+<p class="tag">Où est-elle passée ?</p>
 </div>
 <div class="card">
-<svg aria-hidden="true" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#2F6FD6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h11l5 5v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z"/><path d="M15 5v5h5"/><path d="M7 14h6"/><path d="M7 17h4"/></svg>
+<div class="tile-ico"><svg aria-hidden="true" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#1F55AD" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h11l5 5v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z"/><path d="M15 5v5h5"/><path d="M7 14h6"/><path d="M7 17h4"/></svg></div>
 <h3>Sous-exploitées</h3>
 <p>Un savoir-faire photographié, mais rarement réutilisé dans les mémoires techniques et les réponses aux appels d'offres.</p>
+<p class="tag">Un savoir-faire qui dort</p>
 </div>
 </div>
 </div>
@@ -95,8 +102,8 @@
 <p>Avant de commencer, on prépare le chantier : les catégories et les éléments à photographier. Sur place, chaque photo prise est associée à son chantier et à son ouvrage, sans formulaire à remplir.</p>
 </div>
 <div class="panel-img">
-<img class="phone" src="assets/mobile-nouveau-chantier.jpg" width="720" height="1419" loading="lazy" alt="Écran mobile de création d'un chantier : code, nom et chantier existant">
-<img class="phone" src="assets/mobile-preparation.jpg" width="720" height="1416" loading="lazy" alt="Écran mobile de préparation du chantier : catégories à voir et éléments prévus">
+<img class="phone" src="/assets/mobile-nouveau-chantier.jpg" width="720" height="1419" loading="lazy" alt="Écran mobile de création d'un chantier : code, nom et chantier existant">
+<img class="phone" src="/assets/mobile-preparation.jpg" width="720" height="1416" loading="lazy" alt="Écran mobile de préparation du chantier : catégories à voir et éléments prévus">
 </div>
 </div>
 
@@ -107,7 +114,7 @@
 <p>Les photos sont envoyées vers le PC du bureau et rangées automatiquement par chantier, par date et par auteur. Tout le monde travaille sur la même bibliothèque.</p>
 </div>
 <div class="panel-img">
-<img class="phone single" src="assets/mobile-accueil.jpg" width="720" height="1419" loading="lazy" alt="Écran d'accueil mobile : chantiers actifs, photos à classer et envoi vers le PC">
+<img class="phone single" src="/assets/mobile-accueil.jpg" width="720" height="1421" loading="lazy" alt="Écran d'accueil mobile : chantiers actifs, photos à classer et envoi vers le PC">
 </div>
 </div>
 
@@ -118,7 +125,7 @@
 <p>Chantier, ouvrage, élément, auteur : tapez ce que vous cherchez, la photo apparaît avec tout son contexte.</p>
 </div>
 <div class="panel-img" style="flex:1.6 1 420px">
-<img class="screen" src="assets/pc-bibliotheque.jpg" width="408" height="259" loading="lazy" alt="Bibliothèque SiteLog sur PC : barre de recherche et photos classées">
+<img class="screen" src="/assets/pc-recherche.jpg" width="1600" height="986" loading="lazy" alt="SiteLog PC : recherche « mur clt » et photos classées de plusieurs chantiers">
 </div>
 </div>
 </div>
@@ -129,11 +136,35 @@
 <div class="head">
 <p class="eyebrow">Démonstration</p>
 <h2>Retrouvez aujourd'hui ce que vous avez construit hier.</h2>
-<p class="muted" style="margin:0;font-size:18px;line-height:1.7">Plusieurs mois après la pose, le bureau d'études a besoin de photos de murs CLT pour un nouveau mémoire technique. Il tape « mur clt » : SiteLog cherche dans tous les chantiers de l'équipe et affiche chaque photo avec son chantier, son ouvrage, sa date et son auteur.</p>
+<p class="muted" style="margin:0;font-size:18px;line-height:1.7">De la prise de vue à la recherche : voici le chemin d'une photo dans SiteLog.</p>
 </div>
+
+<div class="flow">
+<div class="flow-step">
+<div class="vis"><img src="/assets/chantier-clt.jpg" width="800" height="972" loading="lazy" alt="Photo d'un bâtiment en CLT prise sur le chantier"></div>
+<p class="cap"><b>1 · Sur le chantier</b>La photo est prise avec SiteLog Mobile.</p>
+</div>
+<svg class="flow-arrow" aria-hidden="true" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+<div class="flow-step">
+<div class="vis"><div class="meta">
+<span>Chantier <b>P18 · Belliard</b></span>
+<span>Catégorie <b>Superstructure</b></span>
+<span>Élément <b>Mur CLT</b></span>
+<span>Auteur <b>Simon</b></span>
+<span style="border:0">Date <b>Jour de la prise de vue</b></span>
+</div></div>
+<p class="cap"><b>2 · Automatiquement</b>Elle est classée avec tout son contexte.</p>
+</div>
+<svg class="flow-arrow" aria-hidden="true" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+<div class="flow-step">
+<div class="vis"><img src="/assets/pc-recherche.jpg" width="1600" height="986" loading="lazy" alt="Recherche « mur clt » dans SiteLog PC" style="object-position:left top"></div>
+<p class="cap"><b>3 · Au bureau</b>Elle se retrouve en un mot, sur tous les chantiers.</p>
+</div>
+</div>
+
 <div class="demo">
 <div class="demo-img">
-<img src="assets/pc-recherche.jpg" width="1600" height="986" loading="lazy" alt="SiteLog PC : recherche « mur clt », résultats issus de plusieurs chantiers et photo d'un bâtiment en CLT ouverte, avec le menu Valider pour usage commercial">
+<img src="/assets/pc-recherche.jpg" width="1600" height="986" loading="lazy" alt="SiteLog PC : recherche « mur clt », résultats issus de plusieurs chantiers et photo d'un bâtiment en CLT ouverte, avec le menu Valider pour usage commercial">
 </div>
 <div class="keeps">
 <p style="font-size:17px;font-weight:700;color:#fff;display:block">Ce que chaque photo conserve</p>
@@ -141,8 +172,27 @@
 <p><span>Ouvrage</span>la catégorie et l'élément</p>
 <p><span>Date</span>le jour de la prise de vue</p>
 <p><span>Auteur</span>qui l'a prise</p>
-<p class="note">Les meilleures photos peuvent être validées pour un usage commercial et retrouvées en un clic.</p>
+<p class="note">Plusieurs mois après la pose, le bureau d'études tape « mur clt » et retrouve toutes les photos de murs CLT de l'entreprise.</p>
 </div>
+</div>
+</div>
+</section>
+
+<section id="capitalisation" class="capi">
+<div class="wrap">
+<div class="txt">
+<p class="eyebrow">Capitalisation</p>
+<h2 style="margin-top:12px">Vos réalisations deviennent vos meilleures références.</h2>
+<p class="muted" style="margin:16px 0 0;font-size:18px;line-height:1.7">Les photos de vos chantiers passés sont un atout commercial. SiteLog vous aide à les retrouver et à les réutiliser.</p>
+<ul>
+<li><svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1F8CD6" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span><strong>Validez les meilleures photos</strong> pour un usage commercial, directement dans SiteLog PC.</span></li>
+<li><svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1F8CD6" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span><strong>Retrouvez vos références par ouvrage</strong>, sur l'ensemble de vos chantiers.</span></li>
+<li><svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1F8CD6" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span><strong>Illustrez vos mémoires techniques</strong> et vos réponses aux appels d'offres avec vos propres réalisations.</span></li>
+</ul>
+</div>
+<div class="pic">
+<img src="/assets/chantier-clt.jpg" width="800" height="972" loading="lazy" alt="Bâtiment en CLT en cours de construction">
+<p class="badge"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1F9D55" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/></svg>Validée pour usage commercial</p>
 </div>
 </div>
 </section>
@@ -178,13 +228,15 @@
 </div>
 </section>
 
-<section id="contact" class="dark cta">
-<div class="wrap">
+<section id="contact" class="cta2">
+<div class="box">
 <h2>Et si vos photos de chantier devenaient un véritable patrimoine technique ?</h2>
 <p>Échangeons pendant 20 minutes autour de vos méthodes actuelles et découvrons comment SiteLog pourrait s'intégrer à votre organisation.</p>
+<div class="actions">
 <a class="btn btn-primary" style="min-height:56px;font-size:17px" href="mailto:sitelog@overie.fr?subject=Demande%20de%20d%C3%A9monstration%20SiteLog">Demander une démonstration</a>
+<a class="btn btn-ghost" style="min-height:56px" href="mailto:sitelog@overie.fr">sitelog@overie.fr</a>
+</div>
 <p class="meta">Présentation personnalisée · En visioconférence ou sur site</p>
-<p class="contact">Contact : <a href="mailto:sitelog@overie.fr">sitelog@overie.fr</a></p>
 </div>
 </section>
 </main>
